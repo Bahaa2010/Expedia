@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    background-color: #eaeaea;
+
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom:15px;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+#help_link {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.nav_links {
+    display: inline;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin: 12px;
+    margin-top: 14px;
+    padding: 8px;
+}
+
+#saerchbar_div {
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background-color: rgba(0, 0, 0,.4);
+    bottom: 0;
+}
+
+#searchbar {
+    position: absolute;
+    width: 800px;
+    height: 40px;
+    background-color: white;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -400px;
+    border-radius:1px;
+}
+
+#search_area{
+    position: absolute;
+    width: 400px;
+    height:34.5px;
+    color: gray;
+    font-family: sans-serif;
+    left: 0;
+    font-size: 16px;
+    text-align: inherit ;
+}
+
+
+#input1{
+    position: absolute;
+    width: 100px;
+    height: 34.5px;
+    left: 400px;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+}
+
+#input2 {
+    position: absolute;
+    width: 100px;
+    height: 34.5px;
+    left: 500px;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+}
+
+#input3 {
+    position: absolute;
+    width: 100px;
+    height: 34.5px;
+    left: 600px;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+}
+
+#search_button_div {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 700px;
+}
+
+#search_button:link {
+    position: absolute;
+    font-family: sans-serif;
+    /*    background-color: #f47142;*/
+    background-color:#2eb82e;
+    color: white;
+    text-decoration: none;
+    padding: 11px 30px 11px 30px;
+    border-radius:1.5px;
+}
+
+#search_button:visited {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#search_button:hover {
+    background-color: #85e085;
+}
+
+.topnav {
+    background-color:#2eb82e;
+    margin-left:12.5%;
+    width:75%;
+    overflow: hidden;
+    margin-bottom:6px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:rgba(0,0,0,0);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#item{
+    margin-left:12.5%;
+    width:75%;
+    height: 220px;
+    background-color:#d6f5d6;
+    margin-bottom: 15px;
+    text-align:justify;
+}
+
+.img_item{
+    float: left;
+    width: 22%;
+    height: 100%;
+    background-color: aqua;
+    display: inline-block;
+}
+
+#service_info{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    float: left;
+    margin-left: 9px;
+}
+#service_info a{
+  text-decoration: none;
+  color: black;
+}
+#contact_info{
+    display: inline-block;
+    width: 10%;
+    height: 80%;
+    float: right;
+    margin-top:25px;
+    text-align: center;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+    background-image: url("img/footer.jpg");
+}
+
+#footer_main {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    margin-top:25px;
+    left: 50%;
+    margin-left: -400px;
+    border-bottom: 1px solid lightgray;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#language_div {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #494040;
+    border-radius: 3px;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    right: 8px;
+    top: 15px;
+}
+
+#language_div p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 18 px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+#currency_div {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #494040;
+    border-radius: 3px;
+    margin-top: -5px;
+}
+
+#currency_div p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 18 px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+#footer_info_table {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -5px;
+    padding-right: 120px;
+
+}
+
+.table_title {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#footer_info_table a:link {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    display: block;
+    margin-top: 3px;
+}
+
+#footer_info_table a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#footer_info_table a:hover {
+    color: #9a9a9a;
+}
+
+#footer_info_table a:active {
+    color: dimgray;
+}
+
+#footer_social{
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    bottom: 2px;   
+    left: 50%;
+    margin-left: -260px;
+}
+
+#join_us_p{
+    font-family: sans-serif;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align:center;
+    margin-top:13px;
+}
+
+#social_links_div{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    padding-top: 0;  
+}
+
+.social_link_div{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: 1px solid white;
+    text-align: center; 
+    margin-left:90px;
+}
+.social_link_div a:link{
+    color: white;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    top: 6px;
+    margin-left: -4px;
+    border: 32px;
+    border-radius: 1px solid white;
+}
+
+.social_link_div a:hover{
+    color: dimgray;
+}
+
+.social_link_div a:visited{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#reg_inc{
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    padding-top: 42px;
+}

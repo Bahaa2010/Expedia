@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="windows-1256"></meta>
+<head>
+<title>Search Result</title>
+
+<link rel="stylesheet" type="text/css" href="main.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="#" class="nav_links">Sign Up</a> <a href="#" class="nav_links">Log In</a> <a href="#" class="nav_links">Help</a>
+		</div>
+
+		<div id="saerchbar_div">
+			<div id="searchbar">
+				<input id="search_area" list="option" name="option" placeholder="What you are looking for ? "></input>
+				<datalist id="option">
+					
+				</datalist>
+				<input id="input1" list="option1" name="option1" placeholder="Option1"></input>
+				<datalist id="option1">
+					
+				</datalist>
+				<input id="input2" list="option2" name="option2" placeholder="Option2"></input>
+				<datalist id="option2">
+
+				</datalist>
+				<input id="input3" list="option3" name="option3" placeholder="Option3"></input>
+				<datalist id="option3">
+
+				</datalist>
+				<div id="search_button_div">
+					<a href="#" id="search_button"> Search </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="topnav" id="myTopnav">
+		<a href="index.html"><span class="fa fa-home"></span>&nbsp;Home</a> <a> <span class="fa fa-chevron-right"
+			style="font-size: 17px; margin-top: 2px; margin-left:; color: #f1f1f1"></span>
+		</a> <a href="#">Search Result</a> 
+	</div>
+
+	<!--      Item 2 -->
+	<div th:each="htl,iterStat : ${hs}">
+
+		<div id="item">
+			<a href="#"><img th:src="${htl.imgURL}" class="img_item"></img></a>
+			<div id="service_info">
+				<a href="#"><h3>
+						<span th:text="${htl.hotelName}"></span>
+						<th:block th:each="i : ${#numbers.sequence( 1, __${htl.hotelStarRating}__)}">
+							<span class="fa fa-star" style="font-size: 16px; color: crimson"></span>
+						</th:block>
+
+					</h3> </a> <br />
+					<span>Guest Rate:</span><span th:text="${htl.guestReviewRating}"></span><br/>
+					<span>City:</span><span th:text="${htl.city}"></span>&nbsp;&nbsp;<span>Providence:</span><span th:text="${htl.providence}"></span><br/> 
+					<span>From:</span><span th:text="${htl.startDate}"></span>&nbsp;&nbsp;<span>To:</span><span th:text="${htl.endDate}"></span><br/>
+					<span>Currency:</span>&nbsp;&nbsp;<span th:text="${htl.currency}"></span><br/>
+					<span>Average Price:</span><span th:text="${htl.averagePrice}"></span>&nbsp;&nbsp;<span>Total Price:</span><span th:text="${htl.totalPrice}"></span>
+					<span>Original Price:</span><span th:text="${htl.originalPrice}"></span>&nbsp;&nbsp;<span>Percent Saving:</span><span th:text="${htl.percentSaving}"></span><br/>
+					
+			</div>
+			<div id="contact_info">
+				<a href="#"><span class="fa fa-heart" style="font-size: 30px; color: crimson"></span></a><br /> <br /> <a href="#"><span
+					class="fa fa-map-marker" style="font-size: 30px; color: crimson"></span></a><br /> <br />
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!--        Footer -->
+	<div id="footer">
+		<div id="footer_main">
+			<div id="language_div">
+				<p>
+					English<span class="arrow">▼</span>
+				</p>
+			</div>
+			<div id="currency_div">
+				<p>
+					USD<span class="arrow">▼</span>
+				</p>
+			</div>
+			<table id="footer_info_table" cellspacing="7px">
+				<tr>
+					<td>
+						<p class="table_title">company</p>
+					</td>
+					<td>
+						<p class="table_title">Help</p>
+					</td>
+					<td>
+						<p class="table_title">Others</p>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="#" style="margin-top: -12px;"> About </a> <a href="#"> Services </a> <a href="#"> Careers </a> <a href="#"> Job Seekers </a> <a
+						href="#"> Policies </a> <a href="#"> Terms Privacy </a></td>
+					<td><a href="#" style="margin-top: -60px;">Contact Us </a> <a href="#"> Terms Of Use </a></td>
+					<td><a href="#" style="margin-top: -30px;"> Site Map </a> <a href="#"> How to use site? </a> <a href="#"> Wallet </a> <a href="#"> Tags
+					</a> <a href="#"> Invite Friends </a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer_social">
+			<p id="join_us_p">Join Us On</p>
+			<div id="social_links_div">
+				<div class="social_link_div">
+					<a href="#"> <span class="fa fa-facebook"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 50px;">
+					<a href="#"> <span class="fa fa-google"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 100px;">
+					<a href="#"> <span class="fa fa-twitter"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 150px;">
+					<a href="#"> <span class="fa fa-linkedin"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 200px;">
+					<a href="#"> <span class="fa fa-snapchat" style="margin-left: -.75px; margin-top: 1px;"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 250px;">
+					<a href="#"> <span class="fa fa-instagram" style="margin-left: -.8px; margin-top: 1px;"></span>
+					</a>
+				</div>
+				<div class="social_link_div" style="left: 300px;">
+					<a href="#"> <span class="fa fa-youtube"></span>
+					</a>
+				</div>
+			</div>
+			<p id="task_inc">Task,Inc.</p>
+		</div>
+	</div>
+</body>
+</html>
